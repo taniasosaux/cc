@@ -61,6 +61,17 @@ h1 {
     padding-bottom: 100px;
 }
 
+b {
+    background-color: #3E97A7;
+    font-size: 60px;
+    line-height: 1em;
+    letter-spacing: -0.2px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
 h2 {
     font-size: 70px;
     line-height: 1em;
@@ -98,7 +109,8 @@ h2 {
 
 
 .project-hero.project {
-    margin-bottom: 1px;
+    margin-bottom: .5em;
+    margin-top: .5em;
 }
 
 .event-imageContainer {
@@ -112,16 +124,44 @@ h2 {
     flex-wrap: inherit;
 }
 
-.responsive-video {
-    margin-top: .5em;
+.container-video {
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+
+}
+
+.container-form {
+    background-color: #3E97A7;
+    max-width: 1200px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+
+}
+
+
+.video-container.form {
+    background-color: black;
+    max-height: 100%;
+    height: 1200px;
+    margin-top: 1em;
 }
 
 .video-container {
-    max-height: 100%;
-    height: 1000px;
-    margin-top: 1em;
 
+    margin-top: 0em;
 }
+
 
 figure {
 
@@ -241,7 +281,6 @@ iframe {
 .footer {
     color: black;
 
-
     background-color: white;
     display: flex;
     box-shadow: 2px 0 0 0;
@@ -268,9 +307,17 @@ iframe {
 }
 
 .container-gradient {
-    height: 150%;
+
     background-color: rgb(62, 151, 167);
-    background: linear-gradient(180deg, rgba(62, 151, 167, 1) 50%, rgba(255, 255, 255, 1) 75%);
+    font-size: 50px;
+    line-height: 1.5em;
+    letter-spacing: -0.2px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -283,7 +330,7 @@ iframe {
         height: auto;
         position: relative;
         overflow: hidden;
-        padding: 2em;
+        padding: 1em;
     }
 
     .hero-image {
