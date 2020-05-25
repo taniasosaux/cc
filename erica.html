@@ -74,114 +74,118 @@
             <iframe width="1000" height="800" src="assets/erica/azteca.mp4" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div class="container-project-cocineros">
-            <div class="center">
-                <article class="project">
-                    <figure class="project-imageContainer">
+        <!--<div class="container-project-cocineros">
+            <figure class="project-imageContainer">
+                <div class="center">
+                    <article class="project">
+
                         <img class="materialboxed"
                             data-caption="KIKA y su papá atienden con cariño a quien mas lo necesita" width="250"
                             src="assets/erica/eri1.jpg">
-                    </figure>
-                </article>
-            </div>
-            <div class="center">
-                <article class="project">
-                    <figure class="project-imageContainer">
+
+                    </article>
+                </div>
+                <div class="center">
+                    <article class="project">
+
                         <img class="materialboxed" data-caption="Los pequeños tambien son bienvenidos" width="250"
                             src="assets/erica/eri2.jpg">
-                    </figure>
-                </article>
-            </div>
-            <div class="center">
-                <article class="project">
-                    <figure class="project-imageContainer">
-                        <img class="materialboxed"
-                            data-caption="Los adultos mayores son los mas beneficiados por antojitos KIKA" width="250"
-                            src="assets/erica/eri3.jpg">
-                    </figure>
-                </article>
-            </div>
-            <div class="center">
-                <article class="project">
-                    <figure class="project-imageContainer">
+
+                    </article>
+                </div>
+                <div class="center">
+                    <article class="project">
+                        <figure class="project-imageContainer">
+                            <img class="materialboxed"
+                                data-caption="Los adultos mayores son los mas beneficiados por antojitos KIKA"
+                                width="250" src="assets/erica/eri3.jpg">
+                        </figure>
+                    </article>
+                </div>
+                <div class="center">
+                    <article class="project">
+
                         <img class="materialboxed"
                             data-caption="Cientos de personas en situacion vulnerable se acercan para ser ayudadas"
                             width="250" src="assets/erica/eri4.jpg">
-                    </figure>
-                </article>
-            </div>
-        </div>
+
+                    </article>
+                </div>
+            </figure>
+        </div>-->
 
         <img class="responsive-img" src="assets/erica/kikadatos.jpg">
-
+        <div class="container">
+            <img class="responsive-img" src="assets/erica/kikacompras.png">
+        </div>
         <div class="container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9136651350846!2d-96.14201958499193!3d19.198972853084378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c34735dcdf476b%3A0xc067974869a6f411!2sAntojitos%20Kika!5e0!3m2!1ses-419!2smx!4v1590360354526!5m2!1ses-419!2smx"
                 width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
-    </div>
-    <footer class="footer">
-        <div class="social">
-            <a href="https://www.facebook.com/PlataformaMexicoCovid" class="social-link facebook"></a>
-            <a href="https://twitter.com/MexicoCovid191" class="social-link twitter"></a>
-            <a href="https://www.instagram.com/plataformamexicocovid/" class="social-link Instagram"></a>
-            <a href="https://www.linkedin.com/company/plataformamexicocovid19/" class="social-link linkedIn"></a>
-        </div>
-        <p>
-            #CocinasComunitarias
-            <a href="tyc.html">Términos y Condiciones /</a>
-            <a href="adp.html">Aviso de privacidad</a>
-        </p>
-    </footer>
-    <script>
-        const ipad = window.matchMedia("screen and (max-width: 767px)");
-        const menu = document.querySelector(".menu");
-        const burgerButton = document.querySelector("#burger-menu");
-        ipad.addListener(validation);
 
-        function validation(event) {
-            if (event.matches) {
-                burgerButton.addEventListener("click", hideShow);
-            } else {
-                burgerButton.removeEventListener("click", hideShow);
-            }
-        }
-        validation(ipad);
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.facebook.com/PlataformaMexicoCovid" class="social-link facebook"></a>
+                <a href="https://twitter.com/MexicoCovid191" class="social-link twitter"></a>
+                <a href="https://www.instagram.com/plataformamexicocovid/" class="social-link Instagram"></a>
+                <a href="https://www.linkedin.com/company/plataformamexicocovid19/" class="social-link linkedIn"></a>
+            </div>
+            <p>
+                #CocinasComunitarias
+                <a href="tyc.html">Términos y Condiciones /</a>
+                <a href="adp.html">Aviso de privacidad</a>
+            </p>
+        </footer>
+        <script>
+            const ipad = window.matchMedia("screen and (max-width: 767px)");
+            const menu = document.querySelector(".menu");
+            const burgerButton = document.querySelector("#burger-menu");
+            ipad.addListener(validation);
 
-        function hideShow() {
-            if (menu.classList.contains("is-active")) {
-                menu.classList.remove("is-active");
-            } else {
-                menu.classList.add("is-active");
+            function validation(event) {
+                if (event.matches) {
+                    burgerButton.addEventListener("click", hideShow);
+                } else {
+                    burgerButton.removeEventListener("click", hideShow);
+                }
             }
-        }
-    </script>
-    <script data-account="3tE0i3UiGQ" src="https://cdn.userway.org/widget.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, {
-                edge: 'right'
+            validation(ipad);
+
+            function hideShow() {
+                if (menu.classList.contains("is-active")) {
+                    menu.classList.remove("is-active");
+                } else {
+                    menu.classList.add("is-active");
+                }
+            }
+        </script>
+        <script data-account="3tE0i3UiGQ" src="https://cdn.userway.org/widget.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, {
+                    edge: 'right'
+                });
             });
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.materialboxed');
-            var instances = M.Materialbox.init(elems);
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
-        });
-    </script>
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.materialboxed');
+                var instances = M.Materialbox.init(elems);
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });
+        </script>
 
 
-    <!--<br />Diseñado con 💖 por
+        <!--<br />Diseñado con 💖 por
             <a href="https://taniasosa.com">Tania Sosa</a>-->
 
 </body>

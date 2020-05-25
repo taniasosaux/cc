@@ -425,6 +425,14 @@ iframe {
         font-size: 12px;
     }
 
+    .card {
+        color: black;
+        border-radius: 2em;
+        height: 250px;
+        width: 250px;
+    }
+
+
     .event-detail {
         margin: -40px 10px 10px 10px;
     }
