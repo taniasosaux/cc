@@ -33,7 +33,9 @@ p {
     align-items: center;
 }
 
-
+.container-text {
+    background-color: white;
+}
 
 
 .menu {
@@ -124,38 +126,49 @@ h2 {
     flex-wrap: inherit;
 }
 
-.container-video {
-    max-width: 1000px;
-    flex: 1;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-    flex-wrap: inherit;
-
+#Iframe-Liason-Sheet {
+    max-width: 550px;
+    max-height: 2000px;
+    overflow: hidden;
 }
 
-.container-form {
-    background-color: #3E97A7;
-    max-width: 1200px;
-    flex: 1;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-    flex-wrap: inherit;
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+    position: relative;
+    height: 0;
+    /* gets height from padding-bottom setting */
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
 
+.responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* padding-bottom = h/w as a % */
+.responsive-wrapper-wxh-550x2000 {
+    padding-bottom: 120%;
 }
 
 
-.video-container.form {
-    background-color: black;
-    max-height: 100%;
-    height: 1200px;
-    margin-top: 1em;
+
+.center-block-horiz {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
+
+
+
+
+
+
 
 .video-container {
 
@@ -233,7 +246,7 @@ iframe {
     background-color: white;
 }
 
-.container-cocineros {
+.container-video {
     max-width: 1000px;
     flex: 1;
     margin: 0 auto;
@@ -287,7 +300,23 @@ iframe {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 0px;
+}
 
+.footer-form {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 0 0 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.footer-form a {
+    color: black;
 
 }
 
@@ -303,7 +332,6 @@ iframe {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 0px;
-
 }
 
 .container-gradient {
@@ -382,6 +410,9 @@ iframe {
         margin: 0px;
     }
 
+    video-container {
+        height: 1000px;
+    }
 
 }
 
@@ -417,4 +448,6 @@ iframe {
     .hero {
         padding: 2em 1em;
     }
+
+
 }
